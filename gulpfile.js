@@ -2,6 +2,10 @@
 
 var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
+    jshint      = require('gulp-jshint'),
+    uglify      = require('gulp-uglify'),
+    rename      = require('gulp-rename'),
+    concat      = require('gulp-concat'),
     del         = require('del'),
     browserSync = require('browser-sync'),
     reload      = browserSync.reload;
@@ -13,8 +17,23 @@ gulp.task('html', function () {
 
 gulp.task('sass', function () {
     return gulp.src('src/scss/*.scss')
-        .pipe(sass())
+        .pipe(sass({
+            precision: 8
+        }))
         .pipe(gulp.dest('dist/styles'));
+});
+
+gulp.task('scripts', function () {
+    return gulp.src([
+            'src/js/typesetter.js'
+        ])
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter('default'))
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('clean', function (cb) {
@@ -34,5 +53,5 @@ gulp.task('serve', ['html', 'sass'], function() {
 
     gulp.watch("src/scss/**/*.scss", ['sass']);
     gulp.watch("dist/styles/*").on('change', reload);
-    gulp.watch("src/**/*.html").on('change', reload);
+    gulp.watch("dist/**/*.html").on('change', reload);
 });
