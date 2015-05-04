@@ -1,0 +1,32 @@
+{
+  "name": "Typesetter",
+  "version": "1.0.0",
+  "description": "Set responsive typography with vertical rhythm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MattTurnure/Typesetter.git"
+  },
+  "keywords": [
+    "typography",
+    "responsive",
+    "scss",
+    "sass",
+    "css"
+  ],
+  "author": "Matthew Turnure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MattTurnure/Typesetter/issues"
+  },
+  "homepage": "https://github.com/MattTurnure/Typesetter",
+  "devDependencies": {
+    "browser-sync": "^2.7.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.3"
+  }
+}

@@ -1,0 +1,52 @@
+body {
+  background: -webkit-repeating-linear-gradient(-90deg, transparent, transparent 23px, #ccc 24px);
+  background: -moz-repeating-linear-gradient(-90deg, transparent, transparent 23px, #ccc 24px);
+  background: -o-repeating-linear-gradient(-90deg, transparent, transparent 23px, #ccc 24px);
+  background-size: 100% 24px; }
+
+h1 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 24px 0; }
+
+h2, article h1 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  margin: 24px 0; }
+
+h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  margin: 24px 0; }
+
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  margin: 24px 0; }
+
+h5, h6, p, ul, ol, dl, td, th, .vcard {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 24px 0; }
+
+@media all and (min-width: 40em) {
+  h1 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.33333;
+    margin: 24px 0; }
+  h2, article h1 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333;
+    margin: 24px 0; }
+  h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 24px 0; } }

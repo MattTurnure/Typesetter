@@ -1,7 +1,8 @@
 $breakpoint-one: 40em;
+$breakpoint-two: 60em;
 $browser-context: 16;
 $baseline: 24;
-$typesetter-horizontal-debug: false;
+$typesetter-horizontal-debug: true;
 $typesetter-vertical-debug: false;
 
 @mixin repeating-linear-gradient($gradients) {
