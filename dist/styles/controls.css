@@ -1,7 +1,10 @@
 .header-main {
   position: relative; }
 
-.controls {
+.toggle-lines {
   position: absolute;
   top: 0;
   right: 16px; }
+
+body.hide-lines {
+  background: inherit; }

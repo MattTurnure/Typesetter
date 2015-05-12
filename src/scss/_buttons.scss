@@ -1,0 +1,21 @@
+$button-bg: rgb(75,75,75);
+$button-bg-hover: rgba(75,75,75,0.75);
+$button-color: #fff;
+$button-font: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+
+button,
+.btn {
+    background-color: $button-bg;
+    border: 0;
+    color: $button-color;
+    cursor: pointer;
+    font-family: $button-font;
+    margin: 0;
+    outline: none;
+    padding: 12px 24px;
+
+    &:hover,
+    &:focus {
+        background-color: $button-bg-hover;
+    }
+}

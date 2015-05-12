@@ -1,0 +1,16 @@
+.header-main {
+    position: relative;
+}
+
+.toggle-lines {
+    @include setType(16);
+    position: absolute;
+    top: 24px;
+    right: 16px;
+}
+
+body {
+    &.hide-lines {
+        background: inherit;
+    }
+}

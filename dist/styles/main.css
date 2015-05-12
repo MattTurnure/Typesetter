@@ -16,6 +16,33 @@ body {
   background: -o-repeating-linear-gradient(-90deg, transparent, transparent 23px, #ccc 24px);
   background-size: 100% 24px; }
 
+.header-main {
+  position: relative; }
+
+.toggle-lines {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 24px 0;
+  position: absolute;
+  top: 24px;
+  right: 16px; }
+
+body.hide-lines {
+  background: inherit; }
+
+button, .btn {
+  background-color: #4b4b4b;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 12px 24px; }
+  button:hover, button:focus, .btn:hover, .btn:focus {
+    background-color: rgba(75, 75, 75, 0.75); }
+
 h1 {
   font-size: 24px;
   font-size: 1.5rem;

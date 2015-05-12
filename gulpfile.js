@@ -40,18 +40,20 @@ gulp.task('clean', function (cb) {
     del(['dist'], cb);
 });
 
-gulp.task('build', ['html', 'sass']);
+gulp.task('build', ['html', 'sass', 'scripts']);
 
 gulp.task('default', ['build']);
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['html', 'sass'], function() {
+gulp.task('serve', ['html', 'sass', 'scripts'], function() {
 
     browserSync({
         server: "./dist"
     });
 
     gulp.watch("src/scss/**/*.scss", ['sass']);
+    gulp.watch("src/js/**/*.js", ['scripts']);
     gulp.watch("dist/styles/*").on('change', reload);
     gulp.watch("dist/**/*.html").on('change', reload);
+    gulp.watch("dist/js/**/*.js").on('change', reload);
 });
