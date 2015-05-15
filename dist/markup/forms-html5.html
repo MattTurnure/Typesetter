@@ -1,0 +1,158 @@
+<article id="html-5">
+    <h2>HTML5 Features</h2>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Date and Time</legend>
+            <p>HTML5 <code class="snippet">input</code> elements include types date and time.</p>
+            <ol>
+                <li>
+                    <label for="date">Date</label>
+                    <input id="date" name="date" type="date" required min="2015-02-13" max="2015-02-18">
+                </li>
+                <li>
+                    <label for="time">Time</label>
+                    <input id="time" name="time" type="time" required min="2015-02-13" max="2015-02-18">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Data Lists</legend>
+            <p>Start typing and suggestions will appear. This is all done with simple markup.</p>
+            <ol>
+                <li>
+                    <label for="svc">Service Centers</label>
+                    <datalist id="service_centers">
+                        <option>ABL</option>
+<option>AMA</option>
+<option>AUG</option>
+<option>AUS</option>
+<option>AVL</option>
+<option>BHM</option>
+<option>BMT</option>
+<option>BTR</option>
+<option>BWG</option>
+<option>CHA</option>
+<option>CHI</option>
+<option>CHR</option>
+<option>CIN</option>
+<option>CKV</option>
+<option>CLM</option>
+<option>CLT</option>
+<option>COR</option>
+<option>CRP</option>
+<option>CSC</option>
+<option>DAL</option>
+<option>DAR</option>
+<option>DEC</option>
+<option>DOT</option>
+<option>DRT</option>
+<option>EKY</option>
+<option>ELP</option>
+<option>ENC</option>
+<option>FAY</option>
+<option>FMY</option>
+<option>FTS</option>
+<option>FTV</option>
+<option>FUL</option>
+<option>GAD</option>
+<option>GBO</option>
+<option>GRN</option>
+<option>GUL</option>
+<option>HAR</option>
+<option>HKY</option>
+<option>HOU</option>
+<option>JAX</option>
+<option>JBO</option>
+<option>JKN</option>
+<option>JMS</option>
+<option>KNX</option>
+<option>LAR</option>
+<option>LEX</option>
+<option>LOU</option>
+<option>LRK</option>
+<option>LUB</option>
+<option>MAC</option>
+<option>MAY</option>
+<option>MER</option>
+<option>MFS</option>
+<option>MIA</option>
+<option>MOB</option>
+<option>MOD</option>
+<option>MON</option>
+<option>MWK</option>
+<option>NAS</option>
+<option>NCC</option>
+<option>NFK</option>
+<option>NIL</option>
+<option>NOL</option>
+<option>NOR</option>
+<option>NSH</option>
+<option>OKC</option>
+<option>OPK</option>
+<option>ORL</option>
+<option>OWN</option>
+<option>RAL</option>
+<option>RMD</option>
+<option>ROA</option>
+<option>SAT</option>
+<option>SAV</option>
+<option>SHE</option>
+<option>SHR</option>
+<option>STL</option>
+<option>TAL</option>
+<option>TAM</option>
+<option>TIF</option>
+<option>TRI</option>
+<option>TUL</option>
+<option>TUP</option>
+<option>TYL</option>
+<option>WAC</option>
+<option>WFS</option>
+<option>WIN</option>
+<option>WPB</option>
+                    </datalist>
+                    <input id="svc" name="svc" type="text" list="service_centers">
+                </li>
+            </ol>
+        </fieldset>
+        <button type="submit">Go</button>
+    </form>
+</article>
+
+<h4 class="code-header">Implementation</h4>
+<pre><code class="language-markup">
+&lt;form action="" method="get"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Date and Time&lt;/legend&gt;
+        &lt;p&gt;HTML5 &lt;code class="snippet"&gt;input&lt;/code&gt; elements include types date and time.&lt;/p&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                &lt;label for="date"&gt;Date&lt;/label&gt;
+                &lt;input id="date" name="date" type="date" required min="2015-02-13" max="2015-02-18"&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for="time"&gt;Time&lt;/label&gt;
+                &lt;input id="time" name="time" type="time" required min="2015-02-13" max="2015-02-18"&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Data Lists&lt;/legend&gt;
+        &lt;p&gt;Start typing and suggestions will appear. This is all done with simple markup.&lt;/p&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                &lt;label for="svc"&gt;Service Centers&lt;/label&gt;
+                &lt;datalist id="service_centers"&gt;
+                    &lt;option>ABL&lt;/option&gt;
+                    &lt;option&gt;AMA&lt;/option&gt;
+                    &lt;option&gt;AUG&lt;/option&gt;
+                    &lt;!-- more options --&gt;
+                &lt;/datalist&gt;
+                &lt;input id="svc" name="svc" type="text" list="service_centers"&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/fieldset&gt;
+    &lt;button type="submit"&gt;Go&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>

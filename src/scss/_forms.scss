@@ -1,0 +1,39 @@
+$input-border: #ccc;
+
+%default-input {
+    @extend %setDefaultType;
+    border: 1px solid $input-border;
+    line-height: 23px;
+    margin: -1px 0 0;
+    padding: 0 4px;
+}
+
+label {
+    @extend %setDefaultType;
+    display: block;
+    margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="file"],
+textarea {
+    @extend %default-input;
+}
+
+input[type="file"] {
+    border: 0;
+    height: 24px;
+}
+
+textarea {
+    height: 92px;
+}
+
+select {
+    @extend %setDefaultType;
+    line-height: 24px;
+    margin: 0;
+}

@@ -1,0 +1,118 @@
+<article id="nested">
+    <h3>Nesting Grids</h3>
+    <p>You can also nest layouts. In fact, this <em>whole</em> page is a nested grid. How fucking meta is that?</p>
+    <div class="six-three">
+        <main class="primary">
+            <h4>Primary stuff</h4>
+            <h5>Example: <code class="snippet">thirds</code></h5>
+            <p>The three-column layout does not kick in until <code class="snippet">$breakpoint-two</code>.</p>
+            <div class="thirds">
+                <div class="col">
+                    <h6>Moe Howard</h6>
+                    <p>The alpha stooge.</p>
+                </div>
+                <div class="col">
+                    <h6>Larry Fine</h6>
+                    <p>A virtuoso violinist, and middle stooge.</p>
+                </div>
+                <div class="col">
+                    <h6>Curly Howard</h6>
+                    <p>The funniest stooge and favorite by many.</p>
+                </div>
+            </div>
+
+            <h5>Example: <code class="snippet">two-to-three</code></h5>
+            <div class="two-to-three">
+                <div class="col">
+                    <h6>Moe Howard</h6>
+                    <p>The alpha stooge.</p>
+                </div>
+                <div class="col">
+                    <h6>Larry Fine</h6>
+                    <p>A virtuoso violinist, and middle stooge.</p>
+                </div>
+                <div class="col">
+                    <h6>Shemp Howard</h6>
+                    <p>Stooge antics led to post-traumatic stress disorder.</p>
+                </div>
+                <div class="col">
+                    <h6>Curly Howard</h6>
+                    <p>The funniest stooge and favorite by many.</p>
+                </div>
+                <div class="col">
+                    <h6>Joe</h6>
+                    <p>What can you say?</p>
+                </div>
+            </div><!-- /.two-to-three -->
+        </main>
+        <aside class="secondary">
+            <h4>Secondary stuff</h4>
+            <h5>Example: <code class="snippet">halves</code></h5>
+            <p>The two-column layout does not kick in until <code class="snippet">$breakpoint-one</code>.</p>
+            <div class="halves">
+                <div class="col">
+                    <h6>Moe Howard</h6>
+                    <p>The alpha stooge.</p>
+                </div>
+                <div class="col">
+                    <h6>Larry Fine</h6>
+                    <p>A virtuoso violinist, and middle stooge.</p>
+                </div>
+            </div>
+        </aside>
+    </div><!-- /.six-three -->
+
+<h4 class="code-header">Implementation</h4>
+<pre><code class="language-markup">
+&lt;div class="group"&gt;
+    &lt;div class="six-three"&gt;
+        &lt;main class="primary"&gt;
+            &lt;!-- Primary content --&gt;
+            &lt;h5&gt;Example: thirds&lt;/h5&gt;
+            &lt;div class="thirds"&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;h5&gt;Example: two-to-three&lt;/h5&gt;
+            &lt;div class="two-to-three"&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- /.two-to-three --&gt;
+        &lt;/main&gt;&lt;!-- /.primary --&gt;
+        &lt;aside class="secondary"&gt;
+            &lt;!-- Secondary content --&gt;
+            &lt;h5&gt;Example: halves&lt;/h5&gt;
+            &lt;div class="halves"&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+                &lt;div class="col"&gt;
+                    &lt;!-- content --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/aside&gt;&lt;!-- /.secondary --&gt;
+    &lt;/div&gt;&lt;!-- /.six-three --&gt;
+&lt;/div&gt;&lt;!-- /.group --&gt;
+</code></pre>
+</article>

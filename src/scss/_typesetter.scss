@@ -46,6 +46,10 @@ $typesetter-vertical-debug: false;
     margin: $baseline + px 0;
 }
 
+%setDefaultType {
+    @include setType(16);
+}
+
 @mixin set-relative-type() {
     h1 {
         @include setType(24);
@@ -60,12 +64,13 @@ $typesetter-vertical-debug: false;
         @include setType(18);
     }
 
-    h4 {
+    h4,
+    caption {
         @include setType(18);
     }
 
-    h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote {
-        @include setType(16);
+    h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote, pre, var, code {
+        @extend %setDefaultType;
     }
 
     @media all and (min-width: $breakpoint-one) {
@@ -82,11 +87,7 @@ $typesetter-vertical-debug: false;
             @include setType(20);
         }
 
-        h4 {
-            @include setType(18);
-        }
-
-        h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote {
+        h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote, pre, var, code {
             @include setType(14);
         }
     }
@@ -109,19 +110,6 @@ $typesetter-vertical-debug: false;
             @include setType(16);
         }
     }
-}
-
-html {
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    -o-text-rendering: optimizeLegibility;
-    -ms-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -ms-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
 }
 
 body {

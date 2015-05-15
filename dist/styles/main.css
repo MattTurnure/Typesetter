@@ -1,3 +1,78 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
 html {
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
@@ -9,6 +84,15 @@ html {
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased; }
+
+ul, ol {
+  padding-left: 2em; }
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"], input[type="file"], textarea, label, select, h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote, pre, var, code {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 24px 0; }
 
 body {
   background: -webkit-repeating-linear-gradient(-90deg, transparent, transparent 23px, #ccc 24px);
@@ -43,6 +127,34 @@ button, .btn {
   button:hover, button:focus, .btn:hover, .btn:focus {
     background-color: rgba(75, 75, 75, 0.75); }
 
+.content-main {
+  margin: 0 auto;
+  padding: 0 1em; }
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"], input[type="file"], textarea {
+  border: 1px solid #ccc;
+  line-height: 23px;
+  margin: -1px 0 0;
+  padding: 0 4px; }
+
+label {
+  display: block;
+  margin: 0; }
+
+input[type="file"] {
+  border: 0;
+  height: 24px; }
+
+textarea {
+  height: 92px; }
+
+select {
+  line-height: 24px;
+  margin: 0; }
+
+table {
+  width: 100%; }
+
 h1 {
   font-size: 24px;
   font-size: 1.5rem;
@@ -61,16 +173,10 @@ h3 {
   line-height: 1.33333333;
   margin: 24px 0; }
 
-h4 {
+h4, caption {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333333;
-  margin: 24px 0; }
-
-h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
   margin: 24px 0; }
 
 @media all and (min-width: 40em) {
@@ -89,12 +195,7 @@ h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote {
     font-size: 1.25rem;
     line-height: 1.2;
     margin: 24px 0; }
-  h4 {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.33333333;
-    margin: 24px 0; }
-  h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote {
+  h5, h6, p, ul, ol, dl, td, th, .vcard, blockquote, pre, var, code {
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 1.71428571;

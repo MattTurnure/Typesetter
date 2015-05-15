@@ -1,5 +1,10 @@
+@import 'reset';
+@import 'typography';
 @import 'typesetter';
 @import 'controls';
 @import 'buttons';
+@import 'layout';
+@import 'forms';
+@import 'tables';
 
 @include set-relative-type();

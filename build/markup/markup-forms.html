@@ -1,0 +1,180 @@
+<article id="form-elements">
+    <h2>Forms</h2>
+    <p>This section includes styling for all form elements.</p>
+    <p>All fields are <em class="required">*</em> required.</p>
+    <form action="" method="get">
+        <div class="halves">
+            <fieldset class="col" id="contact-info">
+                <legend>Contact Info</legend>
+                <ol>
+                    <li>
+                        <label for="f_name">First name</label>
+                        <input id="f_name" name="f_name" type="text">
+                    </li>
+                    <li>
+                        <label for="l_name">Last name</label>
+                        <input id="l_name" name="l_name" type="text">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email">
+                    </li>
+                </ol>
+            </fieldset>
+
+            <fieldset class="col" id="section-address">
+                <legend>Location</legend>
+                <ol>
+                    <li>
+                        <label for="adr_1">Street address</label>
+                        <input id="adr_1" name="adr_1" type="text">
+                    </li>
+                    <li>
+                        <label for="adr_2">Address line two</label>
+                        <input id="adr_2" name="adr_2" type="text">
+                    </li>
+                    <li>
+                        <label for="zip">ZIP</label>
+                        <input id="zip" name="zip" type="text">
+                    </li>
+                </ol>
+            </fieldset>
+        </div>
+
+        <div class="halves">
+            <fieldset class="col" id="checkboxes">
+                <legend>Checkboxes</legend>
+                <ol class="check-radio-group">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="check1" value="y">
+                            <span class="label">Check one</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="check2" value="y">
+                            <span class="label">Check two</span>
+                        </label>
+                    </li>
+                </ol>
+            </fieldset>
+
+            <fieldset class="col" id="radio-buttons">
+                <legend>Radio Buttons</legend>
+                <ol class="check-radio-group">
+                    <li>
+                        <label>
+                            <input type="radio" name="radio" value="y" checked>
+                            <span class="label">One</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="radio" value="y">
+                            <span class="label">Row</span>
+                        </label>
+                    </li>
+                </ol>
+            </fieldset>
+        </div>
+
+        <fieldset id="comments">
+            <legend>Textarea</legend>
+            <ol>
+                <li>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </li>
+            </ol>
+        </fieldset>
+
+        <button type="submit">Send it</button>
+    </form>
+
+<h4 class="code-header">Implementation</h4>
+<pre><code class="language-markup">
+&lt;form action="" method="get"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Contact Info&lt;/legend&gt;
+        &lt;p&gt;All fields are &lt;em class="required"&gt;*&lt;/em&gt; required.&lt;/p&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                &lt;label for="f_name"&gt;First name&lt;/label&gt;
+                &lt;input id="f_name" name="f_name" type="text"&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for="l_name"&gt;Last name&lt;/label&gt;
+                &lt;input id="l_name" name="l_name" type="text"&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for="email"&gt;Email&lt;/label&gt;
+                &lt;input id="email" name="email" type="email"&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset id="section-address"&gt;
+        &lt;legend&gt;Location&lt;/legend&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                &lt;label for="adr_1"&gt;Street address&lt;/label&gt;
+                &lt;input id="adr_1" name="adr_1" type="text"&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for="adr_2"&gt;Address line two&lt;/label&gt;
+                &lt;input id="adr_2" name="adr_2" type="text"&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for="zip"&gt;ZIP&lt;/label&gt;
+                &lt;input id="zip" name="zip" type="text"&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset id="checkboxes"&gt;
+        &lt;legend&gt;Checkboxes&lt;/legend&gt;
+        &lt;ol class="check-radio-group"&gt;
+            &lt;li&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" name="check1" value="y"&gt;
+                    &lt;span class="label"&gt;Check one&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" name="check2" value="y"&gt;
+                    &lt;span class="label"&gt;Check two&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset id="radio-buttons"&gt;
+        &lt;legend&gt;Radio Buttons&lt;/legend&gt;
+        &lt;ol class="check-radio-group"&gt;
+            &lt;li&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="radio" value="y" checked&gt;
+                    &lt;span class="label"&gt;One&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="radio" value="y"&gt;
+                    &lt;span class="label"&gt;Row&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset id="textarea"&gt;
+        &lt;legend&gt;Textarea&lt;/legend&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                &lt;label for="message"&gt;Message&lt;/label&gt;
+                &lt;textarea name="message" id="message" cols="30" rows="10"&gt;&lt;/textarea&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/fieldset&gt;
+
+    &lt;button type="submit"&gt;Send it&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+</article>

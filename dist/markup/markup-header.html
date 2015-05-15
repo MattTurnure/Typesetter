@@ -1,0 +1,38 @@
+<article id="header">
+    <h2>Header</h2>
+    <p>The header should be used as an include with a few dynamic meta parameters that should be passed in:</p>
+    <ul>
+        <li><code class="snippet">title</code></li>
+        <li><code class="snippet">description</code></li>
+        <li><code class="snippet">bodyClass</code></li>
+        <li><code class="snippet">appName</code></li>
+    </ul>
+
+<h4 class="code-header">Implementation</h4>
+<pre><code class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html class="no-js"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+        &lt;title&gt;@@title | Pattern Library&lt;/title&gt;
+        &lt;meta name="description" content="@@description"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+        &lt;link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700"&gt;
+        &lt;link rel="stylesheet" href="/assets/styles/main.css"&gt;
+    &lt;/head&gt;
+    &lt;body class="@@bodyClass"&gt;
+        &lt;header class="header-main"&gt;
+            &lt;div class="group"&gt;
+                &lt;h1 class="brand"&gt;
+                    &lt;a href="/"&gt;
+                        &lt;img src="/assets/svg/logo.svg" alt="Brand Name"&gt;
+                        &lt;span class="sub-brand"&gt;@@appName&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/h1&gt;
+                &lt;a href="#nav-main" class="menu" id="menu"&gt;Menu&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/header&gt;
+</code></pre>
+</article><!-- /#header -->

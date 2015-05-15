@@ -1,0 +1,224 @@
+<article id="tables">
+    <h2>Tables</h2>
+    <p>This example features <code class="snippet">tfoot</code>, <code class="snippet">thead</code>, and <code class="snippet">tbody</code> elements. This example has a basic responsive solution: wrap a block level element around it and give it a class of <code class="snippet">table-container</code></p>
+
+    <div class="table-container">
+        <table>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="3" class="left">Total</th>
+                    <td class="currency">$11,874.72</td>
+                </tr>
+            </tfoot>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Dates</th>
+                    <th scope="col">City</th>
+                    <th scope="col" class="currency">Currency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mrs. McCave</td>
+                    <td>02/12/2008</td>
+                    <td>Washington D.C.</td>
+                    <td class="currency">$2,578.22</td>
+                </tr>
+                <tr>
+                    <td>Jeffrey</td>
+                    <td>02/23/2008</td>
+                    <td>St. Louis</td>
+                    <td class="currency">$3,300.37</td>
+                </tr>
+                <tr>
+                    <td>Pee Wee</td>
+                    <td>02/12/2008</td>
+                    <td>Washington D.C.</td>
+                    <td class="currency">$2,578.22</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<h4 class="code-header">Implementation</h4>
+<pre><code class="language-markup">
+&lt;div class="table-container"&gt;
+    &lt;table&gt;
+        &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;th scope="row" colspan="3" class="left"&gt;Total&lt;/th&gt;
+                &lt;td class="currency"&gt;$11,874.72&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope="col"&gt;Name&lt;/th&gt;
+                &lt;th scope="col"&gt;Dates&lt;/th&gt;
+                &lt;th scope="col"&gt;City&lt;/th&gt;
+                &lt;th scope="col" class="currency"&gt;Currency&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Mrs. McCave&lt;/td&gt;
+                &lt;td&gt;02/12/2008&lt;/td&gt;
+                &lt;td&gt;Washington D.C.&lt;/td&gt;
+                &lt;td class="currency"&gt;$2,578.22&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Jeffrey&lt;/td&gt;
+                &lt;td&gt;02/23/2008&lt;/td&gt;
+                &lt;td&gt;St. Louis&lt;/td&gt;
+                &lt;td class="currency"&gt;$3,300.37&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Pee Wee&lt;/td&gt;
+                &lt;td&gt;02/12/2008&lt;/td&gt;
+                &lt;td&gt;Washington D.C.&lt;/td&gt;
+                &lt;td class="currency"&gt;$2,578.22&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+
+    <h3>Accordion Tables</h3>
+    <p>This example shows a table with expandable rows. There are a few dependencies:</p>
+    <ul>
+        <li>The <code class="snippet">table</code> element must have a class of&nbsp;<code class="snippet">accordion-table</code>.</li>
+        <li>The <code class="snippet">tr</code> element that acts as a parent should get a class of <code class="snippet">parent-row</code> and a <strong>unique</strong> <code class="snippet">data-id</code>&nbsp;attribute.</li>
+        <li>The first <code class="snippet">th</code> or <code class="snippet">td</code> in the parent row must have a class of&nbsp;<code class="snippet">expand-controller</code>.</li>
+        <li>All child rows must have a class of <code class="snippet">child-row</code>&nbsp;<strong>AND</strong></li>
+        <li>All child rows must have the same <code class="snippet">data-id</code> attribute as their corresponding&nbsp;parent.</li>
+    </ul>
+    <div class="table-container">
+        <table class="accordion-table">
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="3" class="left">Total</th>
+                    <td class="currency">$11,874.72</td>
+                </tr>
+            </tfoot>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Dates</th>
+                    <th scope="col">City</th>
+                    <th scope="col" class="currency">Currency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="parent-row" data-id="mccave">
+                    <td class="expand-controller">Mrs. McCave</td><!-- js generates a toggle icon -->
+                    <td>02/12/2008</td>
+                    <td>Washington D.C.</td>
+                    <td class="currency">$2,578.22</td>
+                </tr>
+                <!-- child row start -->
+                    <tr class="child-row" data-id="mccave">
+                        <td>Bodkin Van Horn</td>
+                        <td>02/12/2008</td>
+                        <td>Washington D.C.</td>
+                        <td class="currency">$2,578.22</td>
+                    </tr>
+                    <tr class="child-row" data-id="mccave">
+                        <td>Hoos-Foos</td>
+                        <td>02/12/2008</td>
+                        <td>Washington D.C.</td>
+                        <td class="currency">$2,578.22</td>
+                    </tr>
+                    <tr class="child-row" data-id="mccave">
+                        <td>Snimm</td>
+                        <td>02/12/2008</td>
+                        <td>Washington D.C.</td>
+                        <td class="currency">$2,578.22</td>
+                    </tr>
+                <!-- /child row end -->
+                <tr>
+                    <td>Jeffrey</td>
+                    <td>02/23/2008</td>
+                    <td>St. Louis</td>
+                    <td class="currency">$3,300.37</td>
+                </tr>
+
+                <tr class="parent-row" data-id="peewee">
+                    <td class="expand-controller">Pee Wee</td>
+                    <td>02/12/2008</td>
+                    <td>Washington D.C.</td>
+                    <td class="currency">$2,578.22</td>
+                </tr>
+                <!-- child row start -->
+                    <tr class="child-row" data-id="peewee">
+                        <td>Buck Buck McFate</td>
+                        <td>02/12/2008</td>
+                        <td>Washington D.C.</td>
+                        <td class="currency">$2,578.22</td>
+                    </tr>
+                    <tr class="child-row" data-id="peewee">
+                        <td>Oliver Boliver Butt</td>
+                        <td>02/12/2008</td>
+                        <td>Washington D.C.</td>
+                        <td class="currency">$2,578.22</td>
+                    </tr>
+                    <tr class="child-row" data-id="peewee">
+                        <td>Weepy Weed</td>
+                        <td>02/12/2008</td>
+                        <td>Washington D.C.</td>
+                        <td class="currency">$2,578.22</td>
+                    </tr>
+                <!-- /child row end -->
+            </tbody>
+        </table>
+    </div>
+
+<h4 class="code-header">Implementation</h4>
+<pre><code class="language-markup">
+&lt;div class="table-container"&gt;
+    &lt;table class="accordion-table"&gt;
+        &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;th scope="row" colspan="3" class="left"&gt;Total&lt;/th&gt;
+                &lt;td class="currency"&gt;$11,874.72&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope="col"&gt;Name&lt;/th&gt;
+                &lt;th scope="col"&gt;Dates&lt;/th&gt;
+                &lt;th scope="col"&gt;City&lt;/th&gt;
+                &lt;th scope="col" class="currency"&gt;Currency&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr class="parent-row" data-id="mccave"&gt;
+                &lt;td class="expand-controller"&gt;Mrs. McCave&lt;/td&gt;
+                &lt;td&gt;02/12/2008&lt;/td&gt;
+                &lt;td&gt;Washington D.C.&lt;/td&gt;
+                &lt;td class="currency"&gt;$2,578.22&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;!-- child row start --&gt;
+                &lt;tr class="child-row" data-id="mccave"&gt;
+                    &lt;td&gt;Bodkin Van Horn&lt;/td&gt;
+                    &lt;td&gt;02/12/2008&lt;/td&gt;
+                    &lt;td&gt;Washington D.C.&lt;/td&gt;
+                    &lt;td class="currency"&gt;$2,578.22&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class="child-row" data-id="mccave"&gt;
+                    &lt;td&gt;Hoos-Foos&lt;/td&gt;
+                    &lt;td&gt;02/12/2008&lt;/td&gt;
+                    &lt;td&gt;Washington D.C.&lt;/td&gt;
+                    &lt;td class="currency"&gt;$2,578.22&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class="child-row" data-id="mccave"&gt;
+                    &lt;td&gt;Snimm&lt;/td&gt;
+                    &lt;td&gt;02/12/2008&lt;/td&gt;
+                    &lt;td&gt;Washington D.C.&lt;/td&gt;
+                    &lt;td class="currency"&gt;$2,578.22&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;!-- /child row end --&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+</article>

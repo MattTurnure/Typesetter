@@ -1,0 +1,69 @@
+<article class="group" id="submission-indicator">
+    <h2>Form Submission Indicator</h2>
+    <p>The spinner uses CSS animations and then toggles the visibility during submissions. There are 2 ways to add this module to your page. The default way is to add the class "spinnerForm" to your form. The script will append the div for the spinner when it attaches the event to the form and will grey out the entire form. The second way allows you to specify an already-existing div for the spinner to live in so that you can have more control over the lok and location of the spinner should you need it. You do this by adding a data-target attribute to your form</p>
+
+    <h4>Default Example:</h4>
+    <div class="container">
+        <form class="spinnerForm">
+            <button type="submit" class="spinnerBtn">Send it</button>
+        </form>
+    </div>
+
+<h4>Specified Target Example:</h4>
+<div class="container">
+    <form class="spinnerForm" data-target="loadingDiv">
+        <button type="submit" class="spinnerBtn">Send it</button>
+        <div class="loading js-fade-out" id="loadingDiv">
+            <span>Loading</span>
+            <div class="spinner"></div>
+        </div>
+    </form>
+    <p>The default example just requires that you add spinnerForm as a class for your form. This is the recommended approach if you do not have unique UI needs for this submission</p>
+
+<pre><code class="language-markup">
+&lt;form class="spinnerForm"&gt;</code></pre>
+</code></pre>
+    <p>The secondary example specify a target div id for your form to control then control the look and feel of the ID in your css</p>
+
+<pre><code class="language-markup">
+&lt;form class="spinnerForm" data-target="loadingDiv"&gt;
+
+//the div that houses the spinner
+&lt;div class="loading js-fade-out" id="loadingDiv"&gt;
+    &lt;span>Loading&lt;/span&gt;
+    &lt;div class="spinner">&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-javascript">
+var spinnerForms = doc.getElementsByClassName('spinnerForm'),
+    formLen = spinnerForms.length;
+
+while(formLen --){
+    addAjaxSpinner(spinnerForms[formLen]);
+}
+function addAjaxSpinner(form, target){
+    if(!target) { //no target specified so create the div and attach it to the form
+        var div = doc.createElement("div"),
+            span = doc.createElement("span"),
+            spinner = div.cloneNode(true),
+            target;
+        div.className = "loading js-fade-out";
+        span.innerHTML = "Loading";
+        div.appendChild(span);
+        spinner.className = "spinner";
+        div.appendChild(spinner);
+        form.appendChild(div);
+        target = div; //set the location of the toggle the newly created div
+    }
+    assignToggleListener(form, target);//on submit of form toggle the target
+
+}
+function assignToggleListener(form, target){
+    form.addEventListener('submit',function(){
+        target.classList.toggle("js-fade-out");
+    });
+}
+</code></pre>
+    </div>
+</article>

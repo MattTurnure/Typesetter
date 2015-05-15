@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Typesetter</title>
+        <meta name="description" content="Set responsive typography with vertical rhythm">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/controls.css">
+    </head>
+    <body>
+<<<<<<< Updated upstream
+        <header class="header-main">
+            <h1>Typesetter</h1>
+        </header>
+
+        <article id="type">
+            <h1>Heading One</h1>
+            <p>XOXO tattooed small batch PBR semiotics, pug aesthetic cornhole sriracha scenester Banksy fap. Heirloom leggings DIY, squid salvia letterpress Shoreditch. Fap bicycle rights pop-up, dreamcatcher whatever direct trade skateboard. Distillery tattooed you probably haven't heard of them Carles butcher cray. Fixie flexitarian heirloom synth cornhole, selfies Banksy four dollar toast pug Blue Bottle art party. Banjo Bushwick meditation pickled aesthetic, keytar vinyl kale chips raw denim Banksy DIY pug. Etsy tattooed blog kitsch plaid polaroid. Lumbersexual yr authentic XOXO direct trade, narwhal Vice plaid bicycle rights brunch banjo artisan bespoke VHS.</p>
+
+            <h2>Heading Two</h2>
+            <p>Deep v flannel cardigan paleo XOXO, cornhole Neutra Helvetica tofu brunch scenester mustache gluten-free small batch salvia. Mlkshk Neutra occupy irony Wes Anderson, iPhone kitsch tilde PBR&amp;B food truck +1 freegan chambray. Salvia lomo messenger bag, fixie vinyl bespoke listicle Marfa tilde irony master cleanse lo-fi distillery vegan wayfarers. Cray Schlitz gastropub skateboard sriracha, cornhole you probably haven't heard of them. Artisan yr selfies single-origin coffee, skateboard wolf deep v kale chips cray. Farm-to-table squid asymmetrical, Neutra mixtape mlkshk scenester master cleanse cray brunch typewriter taxidermy VHS deep v synth.</p>
+
+            <h3>Heading Three</h3>
+            <p>Messenger bag bespoke put a bird on it, crucifix single-origin coffee quinoa meditation small batch salvia yr whatever organic cred Odd Future. Drinking vinegar mlkshk flexitarian street art seitan, meditation authentic raw denim small batch post-ironic forage asymmetrical kogi plaid gastropub. Lomo normcore master cleanse tattooed, mlkshk hella drinking vinegar bicycle rights pug quinoa gentrify tofu kogi art party skateboard. Plaid Shoreditch 3 wolf moon irony, umami tattooed ethical Portland swag aesthetic. Lo-fi wayfarers PBR artisan. Dreamcatcher small batch salvia, locavore meggings cold-pressed banh mi synth Helvetica Bushwick migas. Cardigan Odd Future four loko wolf Etsy Pinterest mumblecore. Squid church-key gluten-free whatever artisan.</p>
+
+            <h4>Heading Four</h4>
+            <p>Raw denim flexitarian leggings, Kickstarter Tumblr butcher <strong>next level skateboard</strong> listicle.</p>
+
+            <h5>Heading Five</h5>
+            <p>Raw denim flexitarian leggings, Kickstarter Tumblr butcher <em>next level skateboard</em> listicle.</p>
+
+            <h6>Heading Six</h6>
+            <p><s>Raw small batch gentrify slow-carb.</s></p>
+            <p><del>Before it was cool habby chic normcore mixtape irony fixie pug.</del></p>
+
+            <h3>Marked text</h3>
+            <p>Street art tote bag Blue Bottle selfies farm-to-table. Sriracha normcore art party literally farm-to-table aesthetic. 8-bit artisan yr ethical church-key, wolf deep v Thundercats <mark>food truck</mark> literally PBR&amp;B letterpress post-ironic pop-up. Vice <mark>mixtape</mark> distillery put a bird on it.</p>
+
+            <h3>Small text</h3>
+            <p><small>Blue Bottle readymade plaid umami sartorial cardigan street art.</small></p>
+
+            <h3>Blockquotes</h3>
+            <blockquote>
+                <p>Hoodie health goth paleo, Portland try-hard raw denim banh mi 8-bit tousled next level. Mlkshk chambray Neutra, sustainable organic twee kale chips cred 3 wolf moon pop-up roof party.</p>
+                <footer>You probably never heard of <cite title="him">him</cite></footer>
+            </blockquote>
+
+            <h3>Lists</h3>
+
+            <h4>Unordered</h4>
+            <ul>
+                <li>Chillwave hella Wes Anderson plaid</li>
+                <li>Marfa lomo twee Vice Godard cornhole squid</li>
+                <li>+1 letterpress cold-pressed put a bird on it</li>
+                <li>Tote bag hella cred</li>
+                <li>Four loko single-origin coffee freegan</li>
+                <li>Messenger bag cliche fashion axe kitsch Intelligentsia</li>
+            </ul>
+
+            <h4>Ordered</h4>
+            <ol>
+                <li>IPhone dreamcatcher DIY</li>
+                <li>Pitchfork PBR hashtag McSweeney's</li>
+                <li>Jean shorts cray hella Tumblr</li>
+                <li>Authentic ugh beard farm-to-table single-origin coffee</li>
+                <li>Street art occupy you probably haven't heard of them</li>
+                <li>Mustache direct trade kale chips squid lomo</li>
+            </ol>
+
+            <h4>Definition</h4>
+            <dl>
+                <dt>Yr fixie</dt>
+                <dd>Yr fixie direct trade, cardigan Wes Anderson heirloom</dd>
+
+                <dt>Echo Park</dt>
+                <dd>Echo Park pop-up Helvetica tousled Thundercats</dd>
+
+                <dt>Migas squid</dt>
+                <dd>Migas squid leggings stumptown lo-fi</dd>
+
+                <dt>Chillwave</dt>
+                <dd>Chillwave gastropub artisan craft beer</dd>
+
+                <dt>Shoreditch</dt>
+                <dd>Shoreditch literally VHS flannel</dd>
+
+                <dt>Wes Anderson</dt>
+                <dd>Wes Anderson jean shorts fap street art</dd>
+            </dl>
+        </article>
+=======
+        <h1>Typesetter</h1>
+        <p>The focus of Typsetter is to set responsive typography using vertical rhythm.</p>
+>>>>>>> Stashed changes
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

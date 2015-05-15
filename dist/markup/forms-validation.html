@@ -1,0 +1,68 @@
+<article id="form-validation">
+    <h2>Validation</h2>
+    <form action="" method="get" data-validate="true" novalidate>
+        <fieldset id="contact-info">
+            <legend>Contact Info</legend>
+            <ol>
+                <li>
+                    <label for="f_name">First name</label>
+                    <input data-rule="required" id="f_name" name="f_name" type="text">
+                </li>
+                <li>
+                    <label for="l_name">Last name</label>
+                    <input data-rule="required" id="l_name" name="l_name" type="text">
+                </li>
+            </ol>
+        </fieldset>
+        <button type="submit">Send it</button>
+    </form>
+
+    <form action="" method="get" data-validate="true" novalidate>
+        <fieldset id="contact-info">
+            <legend>Email Address</legend>
+            <ol>
+                <li>
+                    <label for="email">Email</label>
+                    <input data-rule="email" id="email" name="email" type="email">
+                </li>
+            </ol>
+        </fieldset>
+        <button type="submit">Send it</button>
+    </form>
+</article>
+
+<h4 class="code-header">Implementation</h4>
+<pre><code class="language-markup">
+&lt;article id="form-validation"&gt;
+    &lt;h2&gt;Validation&lt;/h2&gt;
+    &lt;form action="" method="get" data-validate="true" novalidate&gt;
+        &lt;fieldset id="contact-info"&gt;
+            &lt;legend&gt;Contact Info&lt;/legend&gt;
+            &lt;ol&gt;
+                &lt;li&gt;
+                    &lt;label for="f_name"&gt;First name&lt;/label&gt;
+                    &lt;input data-rule="required" id="f_name" name="f_name" type="text"&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;label for="l_name"&gt;Last name&lt;/label&gt;
+                    &lt;input data-rule="required" id="l_name" name="l_name" type="text"&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/fieldset&gt;
+        &lt;button type="submit"&gt;Send it&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;form action="" method="get" data-validate="true" novalidate&gt;
+        &lt;fieldset id="contact-info"&gt;
+            &lt;legend&gt;Email Address&lt;/legend&gt;
+            &lt;ol&gt;
+                &lt;li&gt;
+                    &lt;label for="email"&gt;Email&lt;/label&gt;
+                    &lt;input data-rule="email" id="email" name="email" type="email"&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/fieldset&gt;
+        &lt;button type="submit"&gt;Send it&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/article&gt;
+</code></pre>
